@@ -1,0 +1,7 @@
+---
+Name: vulcan-paypalwebhook-routes
+After: framework/routes#coreroutes
+---
+SilverStripe\Control\Director:
+  rules:
+    'paypal-webhook//$Action/$ID/$Name': Vulcan\PayPalWebhook\Controllers\PayPalWebhookController
